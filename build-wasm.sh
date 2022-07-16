@@ -18,10 +18,6 @@ if ! command -v swiftenv > /dev/null; then
     brew install swiftenv
 fi
 
-if ! command -v wasm-opt > /dev/null; then
-    brew install binaryen
-fi
-
 SDK="/Library/Developer/Toolchains/$SWIFTWASM.xctoolchain"
 
 if [ ! -d "$SDK" ]; then
@@ -30,10 +26,9 @@ fi
 
 SWIFT="$SDK/usr/bin/swift"
 
-
-MODE="debug"
+MODE="release"
 
 cd "$SCRIPT_DIR/BugRepro"
 $SWIFT build --triple wasm32-unknown-wasi -c $MODE -Xlinker --allow-undefined
 
-wasm-opt ".build/$MODE/BugRepro.wasm" -o "$DESTINATION" -Os
+cp ".build/$MODE/BugRepro.wasm" "$DESTINATION"
