@@ -1,0 +1,74 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXFileReference section */
+		BFECA47328822614009D0281 /* BugRepro */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BugRepro; path = ../BugRepro; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		BFECA46C288225FB009D0281 = {
+			isa = PBXGroup;
+			children = (
+				BFECA47328822614009D0281 /* BugRepro */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		BFECA46D288225FB009D0281 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+			};
+			buildConfigurationList = BFECA470288225FB009D0281 /* Build configuration list for PBXProject "JavascriptKitBugRepro" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFECA46C288225FB009D0281;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		BFECA471288225FB009D0281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BFECA472288225FB009D0281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFECA470288225FB009D0281 /* Build configuration list for PBXProject "JavascriptKitBugRepro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFECA471288225FB009D0281 /* Debug */,
+				BFECA472288225FB009D0281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFECA46D288225FB009D0281 /* Project object */;
+}
