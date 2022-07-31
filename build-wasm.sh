@@ -29,6 +29,6 @@ SWIFT="$SDK/usr/bin/swift"
 MODE="release"
 
 cd "$SCRIPT_DIR/BugRepro"
-$SWIFT build --triple wasm32-unknown-wasi -c $MODE -Xlinker --allow-undefined
+$SWIFT build --triple wasm32-unknown-wasi -c $MODE -Xclang-linker -Xswiftc -mexec-model=reactor -Xlinker --export=main
 
 cp ".build/$MODE/BugRepro.wasm" "$DESTINATION"
