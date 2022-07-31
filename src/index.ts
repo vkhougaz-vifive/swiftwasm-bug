@@ -58,7 +58,10 @@ async function loadWasm<Exports>(url: string) {
   wasi.setMemory(instance.exports.memory);
   swift.setInstance(instance);
 
-  wasi.start(instance);
+  // @ts-ignore
+  instance.exports._initialize()
+  // @ts-ignore
+  instance.exports.main()
 }
 
 const wrapWASI = (wasiObject: WASI) => {
